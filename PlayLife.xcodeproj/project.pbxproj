@@ -7,18 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53F3343D145E876034437B98 /* Pods_PlayLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C485B3696D86CD5AE14EC5 /* Pods_PlayLife.framework */; };
+		A1098F4427B60C1900FEB514 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1098F4327B60C1900FEB514 /* ItemDetailView.swift */; };
 		A10C732E27718C1B0055B5DF /* PlayLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C732D27718C1B0055B5DF /* PlayLifeApp.swift */; };
 		A10C733027718C1B0055B5DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C732F27718C1B0055B5DF /* ContentView.swift */; };
 		A10C733227718C1D0055B5DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10C733127718C1D0055B5DF /* Assets.xcassets */; };
 		A10C733527718C1D0055B5DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10C733427718C1D0055B5DF /* Preview Assets.xcassets */; };
+		A10C733C27718C470055B5DF /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C733B27718C470055B5DF /* TodayView.swift */; };
+		A10C733F277192E40055B5DF /* UserDefaults+optionalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C733E277192E30055B5DF /* UserDefaults+optionalValue.swift */; };
+		A10C73412771943E0055B5DF /* PersonalityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C73402771943E0055B5DF /* PersonalityView.swift */; };
+		A10C73432771AA020055B5DF /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C73422771AA020055B5DF /* RootTabView.swift */; };
+		A126188727C75262003C42AB /* D2Coding-Ver1.3.2-20180524.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A126188627C75262003C42AB /* D2Coding-Ver1.3.2-20180524.ttf */; };
+		A126188A27C7551E003C42AB /* neodgm_pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A126188827C7551E003C42AB /* neodgm_pro.ttf */; };
+		A1394FDE279BECCC0081E150 /* HorizontalCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1394FDD279BECCC0081E150 /* HorizontalCalendarView.swift */; };
+		A15D63FB279002B300CEC481 /* Date+Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D63FA279002B300CEC481 /* Date+Expression.swift */; };
+		A170E2CF27C5E88500FF2B8D /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A170E2CE27C5E88500FF2B8D /* CustomDivider.swift */; };
+		A198704A277EDEBA002551D6 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1987049277EDEB9002551D6 /* PlayView.swift */; };
+		A198990227CF8DDC0001DDFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A198990127CF8DDC0001DDFD /* LaunchScreen.storyboard */; };
+		A1A12BA22797E9660001403B /* prev_kor.txt in Resources */ = {isa = PBXBuildFile; fileRef = A1A12BA12797E9660001403B /* prev_kor.txt */; };
+		A1B0F58527743C5500B5866E /* Color+customColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0F58427743C5500B5866E /* Color+customColor.swift */; };
+		A1B0F5872774418600B5866E /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0F5862774418600B5866E /* StatusView.swift */; };
+		A1B8E2262772DD95000118C4 /* SettingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8E2252772DD95000118C4 /* SettingConstants.swift */; };
+		A1B8E2622772FDCD000118C4 /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8E2612772FDCD000118C4 /* StatusLabel.swift */; };
+		A1B8E26427730B92000118C4 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8E26327730B92000118C4 /* UserStatus.swift */; };
+		A1B8E26627730D9B000118C4 /* Int+Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8E26527730D9B000118C4 /* Int+Expression.swift */; };
+		A1C5BE0927896737009D3A6A /* CalendarModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C5BE0827896737009D3A6A /* CalendarModuleView.swift */; };
+		A1C5BE1727899B33009D3A6A /* noun_eng.txt in Resources */ = {isa = PBXBuildFile; fileRef = A1C5BE1627899B33009D3A6A /* noun_eng.txt */; };
+		A1C5BE1B2789A2DB009D3A6A /* prev_eng.txt in Resources */ = {isa = PBXBuildFile; fileRef = A1C5BE1A2789A2DB009D3A6A /* prev_eng.txt */; };
+		A1C5BE1F2789A4B3009D3A6A /* noun_kor.txt in Resources */ = {isa = PBXBuildFile; fileRef = A1C5BE1E2789A4B3009D3A6A /* noun_kor.txt */; };
+		A1D13A89279FD93400311A7D /* Enemy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D13A87279FD93400311A7D /* Enemy+CoreDataProperties.swift */; };
+		A1D13A8A279FD93400311A7D /* Enemy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D13A88279FD93400311A7D /* Enemy+CoreDataClass.swift */; };
+		A1DC39E6277C2F190007536A /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DC39E5277C2F190007536A /* AddItemView.swift */; };
+		A1DC39E8277C38340007536A /* SunAndMoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DC39E7277C38340007536A /* SunAndMoonView.swift */; };
+		A1E1F60C27A8FBB20054C83E /* NavBarAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E1F60B27A8FBB20054C83E /* NavBarAccessor.swift */; };
+		A1E557D42775941A00D8567A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E557D32775941A00D8567A /* DataController.swift */; };
+		A1E557D72775960900D8567A /* PlayLife.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1E557D52775960900D8567A /* PlayLife.xcdatamodeld */; };
+		A1E557DA27759E2E00D8567A /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E557D827759E2E00D8567A /* Item+CoreDataClass.swift */; };
+		A1E557DB27759E2E00D8567A /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E557D927759E2E00D8567A /* Item+CoreDataProperties.swift */; };
+		A1E976F9278E93CA00D44E28 /* RegisteredItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E976F8278E93CA00D44E28 /* RegisteredItemView.swift */; };
+		A1E976FB278EA60C00D44E28 /* TypeSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E976FA278EA60C00D44E28 /* TypeSelectView.swift */; };
+		A1EABA962787F02E00E55334 /* View+appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EABA952787F02E00E55334 /* View+appearance.swift */; };
+		A1F390C927A50548001B46E2 /* AnimationTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F390C827A50548001B46E2 /* AnimationTimer.swift */; };
+		A1F390CE27A5276B001B46E2 /* ShowingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F390CD27A5276B001B46E2 /* ShowingStarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28C485B3696D86CD5AE14EC5 /* Pods_PlayLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E5ED56CDFF2C07AF89A45B /* Pods-PlayLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayLife.debug.xcconfig"; path = "Target Support Files/Pods-PlayLife/Pods-PlayLife.debug.xcconfig"; sourceTree = "<group>"; };
+		A1098F4327B60C1900FEB514 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 		A10C732A27718C1B0055B5DF /* PlayLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10C732D27718C1B0055B5DF /* PlayLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayLifeApp.swift; sourceTree = "<group>"; };
 		A10C732F27718C1B0055B5DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A10C733127718C1D0055B5DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A10C733427718C1D0055B5DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A10C733B27718C470055B5DF /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		A10C733E277192E30055B5DF /* UserDefaults+optionalValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+optionalValue.swift"; sourceTree = "<group>"; };
+		A10C73402771943E0055B5DF /* PersonalityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityView.swift; sourceTree = "<group>"; };
+		A10C73422771AA020055B5DF /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		A126188127C73D25003C42AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A126188627C75262003C42AB /* D2Coding-Ver1.3.2-20180524.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "D2Coding-Ver1.3.2-20180524.ttf"; sourceTree = "<group>"; };
+		A126188827C7551E003C42AB /* neodgm_pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = neodgm_pro.ttf; sourceTree = "<group>"; };
+		A1394FDD279BECCC0081E150 /* HorizontalCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCalendarView.swift; sourceTree = "<group>"; };
+		A15D63FA279002B300CEC481 /* Date+Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Expression.swift"; sourceTree = "<group>"; };
+		A170E2CE27C5E88500FF2B8D /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
+		A1987049277EDEB9002551D6 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		A198990127CF8DDC0001DDFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1A12BA12797E9660001403B /* prev_kor.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = prev_kor.txt; sourceTree = "<group>"; };
+		A1B0F58427743C5500B5866E /* Color+customColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+customColor.swift"; sourceTree = "<group>"; };
+		A1B0F5862774418600B5866E /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		A1B8E2252772DD95000118C4 /* SettingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingConstants.swift; sourceTree = "<group>"; };
+		A1B8E2612772FDCD000118C4 /* StatusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLabel.swift; sourceTree = "<group>"; };
+		A1B8E26327730B92000118C4 /* UserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
+		A1B8E26527730D9B000118C4 /* Int+Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Expression.swift"; sourceTree = "<group>"; };
+		A1C5BE0827896737009D3A6A /* CalendarModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModuleView.swift; sourceTree = "<group>"; };
+		A1C5BE1627899B33009D3A6A /* noun_eng.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noun_eng.txt; sourceTree = "<group>"; };
+		A1C5BE1A2789A2DB009D3A6A /* prev_eng.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = prev_eng.txt; sourceTree = "<group>"; };
+		A1C5BE1E2789A4B3009D3A6A /* noun_kor.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noun_kor.txt; sourceTree = "<group>"; };
+		A1D13A87279FD93400311A7D /* Enemy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Enemy+CoreDataProperties.swift"; path = "/Users/andy/Desktop/XcodeProject/PlayLife/PlayLifeSubClass/Enemy+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		A1D13A88279FD93400311A7D /* Enemy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Enemy+CoreDataClass.swift"; path = "/Users/andy/Desktop/XcodeProject/PlayLife/PlayLifeSubClass/Enemy+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A1DC39E5277C2F190007536A /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		A1DC39E7277C38340007536A /* SunAndMoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunAndMoonView.swift; sourceTree = "<group>"; };
+		A1E1F60B27A8FBB20054C83E /* NavBarAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarAccessor.swift; sourceTree = "<group>"; };
+		A1E557D32775941A00D8567A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		A1E557D62775960900D8567A /* PlayLife.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlayLife.xcdatamodel; sourceTree = "<group>"; };
+		A1E557D827759E2E00D8567A /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A1E557D927759E2E00D8567A /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A1E976F8278E93CA00D44E28 /* RegisteredItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisteredItemView.swift; sourceTree = "<group>"; };
+		A1E976FA278EA60C00D44E28 /* TypeSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSelectView.swift; sourceTree = "<group>"; };
+		A1EABA952787F02E00E55334 /* View+appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+appearance.swift"; sourceTree = "<group>"; };
+		A1F390C827A50548001B46E2 /* AnimationTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTimer.swift; sourceTree = "<group>"; };
+		A1F390CD27A5276B001B46E2 /* ShowingStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingStarView.swift; sourceTree = "<group>"; };
+		D20DA8147D4654F666098633 /* Pods-PlayLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayLife.release.xcconfig"; path = "Target Support Files/Pods-PlayLife/Pods-PlayLife.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +105,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F3343D145E876034437B98 /* Pods_PlayLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1310551199EBE6F4C1994B50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40E5ED56CDFF2C07AF89A45B /* Pods-PlayLife.debug.xcconfig */,
+				D20DA8147D4654F666098633 /* Pods-PlayLife.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9EEE0D5D35AD332ADCD5D302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28C485B3696D86CD5AE14EC5 /* Pods_PlayLife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A10C732127718C1B0055B5DF = {
 			isa = PBXGroup;
 			children = (
+				A1E557DC27759E5B00D8567A /* PlayLifeSubClass */,
 				A10C732C27718C1B0055B5DF /* PlayLife */,
 				A10C732B27718C1B0055B5DF /* Products */,
+				1310551199EBE6F4C1994B50 /* Pods */,
+				9EEE0D5D35AD332ADCD5D302 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +151,16 @@
 		A10C732C27718C1B0055B5DF /* PlayLife */ = {
 			isa = PBXGroup;
 			children = (
-				A10C732D27718C1B0055B5DF /* PlayLifeApp.swift */,
-				A10C732F27718C1B0055B5DF /* ContentView.swift */,
-				A10C733127718C1D0055B5DF /* Assets.xcassets */,
+				A126188127C73D25003C42AB /* Info.plist */,
+				A1BB1D862797DC6A0038B2B2 /* ResourceFiles */,
+				A1BB1D852797DBE80038B2B2 /* Model */,
+				A12670E9278C07BE00863201 /* Controller */,
+				A1C5BE072789637D009D3A6A /* View */,
+				A1DC39E9277C42F90007536A /* Utility */,
+				A10C733D277192830055B5DF /* Extensions */,
 				A10C733327718C1D0055B5DF /* Preview Content */,
+				A1E557D52775960900D8567A /* PlayLife.xcdatamodeld */,
+				A10C733127718C1D0055B5DF /* Assets.xcassets */,
 			);
 			path = PlayLife;
 			sourceTree = "<group>";
@@ -67,6 +173,133 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A10C733D277192830055B5DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A10C733E277192E30055B5DF /* UserDefaults+optionalValue.swift */,
+				A1B8E26527730D9B000118C4 /* Int+Expression.swift */,
+				A1B0F58427743C5500B5866E /* Color+customColor.swift */,
+				A1EABA952787F02E00E55334 /* View+appearance.swift */,
+				A15D63FA279002B300CEC481 /* Date+Expression.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A126187C27C737F5003C42AB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A126188827C7551E003C42AB /* neodgm_pro.ttf */,
+				A126188627C75262003C42AB /* D2Coding-Ver1.3.2-20180524.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A12670E9278C07BE00863201 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A1E557D32775941A00D8567A /* DataController.swift */,
+				A1E1F60B27A8FBB20054C83E /* NavBarAccessor.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A1BB1D852797DBE80038B2B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1B8E26327730B92000118C4 /* UserStatus.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A1BB1D862797DC6A0038B2B2 /* ResourceFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A1A12BA12797E9660001403B /* prev_kor.txt */,
+				A1C5BE1A2789A2DB009D3A6A /* prev_eng.txt */,
+				A1C5BE1E2789A4B3009D3A6A /* noun_kor.txt */,
+				A1C5BE1627899B33009D3A6A /* noun_eng.txt */,
+				A126187C27C737F5003C42AB /* Fonts */,
+			);
+			path = ResourceFiles;
+			sourceTree = "<group>";
+		};
+		A1BB1D882797DCAB0038B2B2 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				A1C5BE0827896737009D3A6A /* CalendarModuleView.swift */,
+				A1394FDD279BECCC0081E150 /* HorizontalCalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		A1C5BE072789637D009D3A6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1F390CC27A52748001B46E2 /* Common */,
+				A1D13A7E279FD24000311A7D /* Play */,
+				A1D13A7D279FD20600311A7D /* Life */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1D13A7D279FD20600311A7D /* Life */ = {
+			isa = PBXGroup;
+			children = (
+				A10C733B27718C470055B5DF /* TodayView.swift */,
+				A1E976F8278E93CA00D44E28 /* RegisteredItemView.swift */,
+				A1098F4327B60C1900FEB514 /* ItemDetailView.swift */,
+				A1DC39E5277C2F190007536A /* AddItemView.swift */,
+				A1DC39E7277C38340007536A /* SunAndMoonView.swift */,
+				A1E976FA278EA60C00D44E28 /* TypeSelectView.swift */,
+				A1BB1D882797DCAB0038B2B2 /* Calendar */,
+			);
+			path = Life;
+			sourceTree = "<group>";
+		};
+		A1D13A7E279FD24000311A7D /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				A1987049277EDEB9002551D6 /* PlayView.swift */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		A1DC39E9277C42F90007536A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A1B8E2252772DD95000118C4 /* SettingConstants.swift */,
+				A1F390C827A50548001B46E2 /* AnimationTimer.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A1E557DC27759E5B00D8567A /* PlayLifeSubClass */ = {
+			isa = PBXGroup;
+			children = (
+				A1D13A88279FD93400311A7D /* Enemy+CoreDataClass.swift */,
+				A1D13A87279FD93400311A7D /* Enemy+CoreDataProperties.swift */,
+				A1E557D827759E2E00D8567A /* Item+CoreDataClass.swift */,
+				A1E557D927759E2E00D8567A /* Item+CoreDataProperties.swift */,
+			);
+			path = PlayLifeSubClass;
+			sourceTree = "<group>";
+		};
+		A1F390CC27A52748001B46E2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A198990127CF8DDC0001DDFD /* LaunchScreen.storyboard */,
+				A10C732D27718C1B0055B5DF /* PlayLifeApp.swift */,
+				A10C732F27718C1B0055B5DF /* ContentView.swift */,
+				A10C73402771943E0055B5DF /* PersonalityView.swift */,
+				A10C73422771AA020055B5DF /* RootTabView.swift */,
+				A1B0F5862774418600B5866E /* StatusView.swift */,
+				A1B8E2612772FDCD000118C4 /* StatusLabel.swift */,
+				A1F390CD27A5276B001B46E2 /* ShowingStarView.swift */,
+				A170E2CE27C5E88500FF2B8D /* CustomDivider.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +307,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A10C733827718C1D0055B5DF /* Build configuration list for PBXNativeTarget "PlayLife" */;
 			buildPhases = (
+				9728087B5FBD332CA013B76B /* [CP] Check Pods Manifest.lock */,
 				A10C732627718C1B0055B5DF /* Sources */,
 				A10C732727718C1B0055B5DF /* Frameworks */,
 				A10C732827718C1B0055B5DF /* Resources */,
+				C6395F95EE756A0340EEF577 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PlayLife;
+			packageProductDependencies = (
+			);
 			productName = PlayLife;
 			productReference = A10C732A27718C1B0055B5DF /* PlayLife.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +348,8 @@
 				Base,
 			);
 			mainGroup = A10C732127718C1B0055B5DF;
+			packageReferences = (
+			);
 			productRefGroup = A10C732B27718C1B0055B5DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,19 +364,98 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A198990227CF8DDC0001DDFD /* LaunchScreen.storyboard in Resources */,
+				A1A12BA22797E9660001403B /* prev_kor.txt in Resources */,
+				A126188727C75262003C42AB /* D2Coding-Ver1.3.2-20180524.ttf in Resources */,
 				A10C733527718C1D0055B5DF /* Preview Assets.xcassets in Resources */,
+				A1C5BE1727899B33009D3A6A /* noun_eng.txt in Resources */,
 				A10C733227718C1D0055B5DF /* Assets.xcassets in Resources */,
+				A126188A27C7551E003C42AB /* neodgm_pro.ttf in Resources */,
+				A1C5BE1F2789A4B3009D3A6A /* noun_kor.txt in Resources */,
+				A1C5BE1B2789A2DB009D3A6A /* prev_eng.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9728087B5FBD332CA013B76B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6395F95EE756A0340EEF577 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayLife/Pods-PlayLife-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayLife/Pods-PlayLife-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayLife/Pods-PlayLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A10C732627718C1B0055B5DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10C733F277192E40055B5DF /* UserDefaults+optionalValue.swift in Sources */,
+				A1B0F5872774418600B5866E /* StatusView.swift in Sources */,
+				A1D13A89279FD93400311A7D /* Enemy+CoreDataProperties.swift in Sources */,
+				A1EABA962787F02E00E55334 /* View+appearance.swift in Sources */,
+				A1C5BE0927896737009D3A6A /* CalendarModuleView.swift in Sources */,
+				A1B8E2622772FDCD000118C4 /* StatusLabel.swift in Sources */,
+				A1DC39E8277C38340007536A /* SunAndMoonView.swift in Sources */,
+				A1E976FB278EA60C00D44E28 /* TypeSelectView.swift in Sources */,
+				A1D13A8A279FD93400311A7D /* Enemy+CoreDataClass.swift in Sources */,
+				A1B0F58527743C5500B5866E /* Color+customColor.swift in Sources */,
+				A1B8E26627730D9B000118C4 /* Int+Expression.swift in Sources */,
 				A10C733027718C1B0055B5DF /* ContentView.swift in Sources */,
+				A1E557DA27759E2E00D8567A /* Item+CoreDataClass.swift in Sources */,
+				A1394FDE279BECCC0081E150 /* HorizontalCalendarView.swift in Sources */,
+				A198704A277EDEBA002551D6 /* PlayView.swift in Sources */,
+				A1E557D42775941A00D8567A /* DataController.swift in Sources */,
+				A10C73412771943E0055B5DF /* PersonalityView.swift in Sources */,
+				A1F390CE27A5276B001B46E2 /* ShowingStarView.swift in Sources */,
+				A170E2CF27C5E88500FF2B8D /* CustomDivider.swift in Sources */,
+				A1B8E2262772DD95000118C4 /* SettingConstants.swift in Sources */,
+				A1B8E26427730B92000118C4 /* UserStatus.swift in Sources */,
+				A1F390C927A50548001B46E2 /* AnimationTimer.swift in Sources */,
+				A1E557D72775960900D8567A /* PlayLife.xcdatamodeld in Sources */,
+				A10C733C27718C470055B5DF /* TodayView.swift in Sources */,
+				A1E976F9278E93CA00D44E28 /* RegisteredItemView.swift in Sources */,
+				A10C73432771AA020055B5DF /* RootTabView.swift in Sources */,
+				A15D63FB279002B300CEC481 /* Date+Expression.swift in Sources */,
+				A1E1F60C27A8FBB20054C83E /* NavBarAccessor.swift in Sources */,
+				A1DC39E6277C2F190007536A /* AddItemView.swift in Sources */,
+				A1E557DB27759E2E00D8567A /* Item+CoreDataProperties.swift in Sources */,
+				A1098F4427B60C1900FEB514 /* ItemDetailView.swift in Sources */,
 				A10C732E27718C1B0055B5DF /* PlayLifeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +581,7 @@
 		};
 		A10C733927718C1D0055B5DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E5ED56CDFF2C07AF89A45B /* Pods-PlayLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -272,11 +591,14 @@
 				DEVELOPMENT_TEAM = 7CF28467GM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = PlayLife/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,6 +614,7 @@
 		};
 		A10C733A27718C1D0055B5DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D20DA8147D4654F666098633 /* Pods-PlayLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,11 +624,14 @@
 				DEVELOPMENT_TEAM = 7CF28467GM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = PlayLife/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +667,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A1E557D52775960900D8567A /* PlayLife.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A1E557D62775960900D8567A /* PlayLife.xcdatamodel */,
+			);
+			currentVersion = A1E557D62775960900D8567A /* PlayLife.xcdatamodel */;
+			path = PlayLife.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A10C732227718C1B0055B5DF /* Project object */;
 }

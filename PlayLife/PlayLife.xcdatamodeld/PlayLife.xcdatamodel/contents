@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Enemy" representedClassName="Enemy" syncable="YES">
+        <attribute name="defeatCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="health" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="weakPointValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="isDoneArray" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[Date]"/>
+        <attribute name="isMoon" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isSun" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="itemType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="registerDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="selectedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="selectedDays" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[Int]"/>
+    </entity>
+    <elements>
+        <element name="Enemy" positionX="-63" positionY="36" width="128" height="104"/>
+        <element name="Item" positionX="-63" positionY="-18" width="128" height="149"/>
+    </elements>
+</model>
