@@ -273,8 +273,7 @@ struct PlayView: View {
                                             .hidden()
                                     }
                                     Text(enemyName)
-                                        // .font(.system(size: SettingConstants.fontSize*1.9))
-                                        .font(.custom(SettingConstants.fontNamePlay, size: SettingConstants.fontSize * 2.1))
+                                        .font(.custom(SettingConstants.fontNamePlay, size: SettingConstants.fontSize * 2))
                                         .overlay(Color.clear.modifier(GeometryGetterMod(rect: $rect1)))
                                 }
                                 
@@ -365,7 +364,6 @@ struct PlayView: View {
                     
                 }
                 .font(.custom(SettingConstants.fontNamePlay, size: SettingConstants.fontSize*1.1))
-                // .font(.system(size: SettingConstants.fontSize * 1))
                 .onAppear {
                     refresh()
                 }

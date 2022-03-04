@@ -10,15 +10,6 @@ import Foundation
 import CoreData
 
 
-/*
- @State var isOnPassion: Bool = false
- @State var isOnCourage: Bool = false
- @State var isOnEndurance: Bool = false
- @State var isOnKindness: Bool = false
- */
-
-
-
 enum WeakPoint: Int32, CaseIterable {
     case passion = 0
     case courage = 1
