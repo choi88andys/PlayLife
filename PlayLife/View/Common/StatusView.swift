@@ -38,7 +38,7 @@ struct StatusView: View {
 
 
 struct VerticalStatusView: View {
-    var spacing: Double = 0
+    var spacing: Double = SettingConstants.fontSize*0.5
     let imageView: Image
     let color: Color
     let value: String
@@ -48,20 +48,13 @@ struct VerticalStatusView: View {
         
     var body: some View {
         return VStack(spacing: spacing){
-            if isSelected {
-                imageView
-                    .foregroundColor(color)
-                    .font(.system(size: SettingConstants.fontSize*1.3))
-            }
-            else {
-                imageView
-                    .foregroundColor(Color.gray)
-                    .font(.system(size: SettingConstants.fontSize*1.3))
-            }            
+            imageView
+                .foregroundColor(isSelected ? color : Color.gray)
+                .font(.system(size: SettingConstants.fontSize*1.7))
             Text(value)
                 .font(.system(size: SettingConstants.fontSize))
         }
-        .padding(SettingConstants.fontSize*1.1)
+        .frame(width: SettingConstants.fontSize*7, height: SettingConstants.fontSize*7)
         .overlay(
             RoundedRectangle(cornerRadius: SettingConstants.fontSize*1.3)
                 .stroke(Color.gray, lineWidth: 1.8)

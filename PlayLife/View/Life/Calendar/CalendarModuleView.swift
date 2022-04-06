@@ -22,7 +22,7 @@ struct CalendarModuleView: UIViewRepresentable {
         
         calendar.headerHeight = SettingConstants.fontSize*4
         calendar.appearance.headerMinimumDissolvedAlpha = 0
-        calendar.appearance.headerDateFormat = SettingConstants.calendarHeaderDateFormat
+        calendar.appearance.headerDateFormat = Strings.calendarHeaderDateFormat
         calendar.appearance.headerTitleColor = UIColor.label
         calendar.appearance.headerTitleFont = UIFont.systemFont(ofSize: SettingConstants.fontSize*1.8)
         
@@ -49,7 +49,8 @@ struct CalendarModuleView: UIViewRepresentable {
         }
         
         
-        calendar.locale = Locale(identifier: SettingConstants.calendarLocaleIdentifier)
+        // calendar.locale = Locale(identifier: SettingConstants.calendarLocaleIdentifier)
+        calendar.locale = Locale(identifier: Strings.calendarLocaleIdentifier)
         return calendar
     }
     

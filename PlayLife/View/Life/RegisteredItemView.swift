@@ -20,7 +20,7 @@ struct RegisteredItemView: View {
     var body: some View {
         return Group {
             if items.isEmpty {
-                Text(SettingConstants.stringForEmptyRegister)
+                Text(Strings.stringForEmptyRegister)
                     .font(.system(size: SettingConstants.fontSize*1.3))
             } else {
                 ScrollView(showsIndicators: false) {
@@ -40,7 +40,7 @@ struct RegisteredItemView: View {
                 .id(refreshID)
             }
         }
-        .navigationTitle(SettingConstants.registeredItemViewTitle)
+        .navigationTitle(Strings.registeredItemViewTitle)
         .navigationBarTitleDisplayMode(.inline)
     }
     

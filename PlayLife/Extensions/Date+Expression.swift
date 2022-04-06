@@ -12,12 +12,13 @@ extension Date {
     func getString(withoutYear: Bool) -> String {
         let dateFormatter = DateFormatter()
         if withoutYear {
-            dateFormatter.dateFormat = "M월 d일"
+            dateFormatter.dateFormat = Strings.dateFormatWithoutYear
         } else {
-            dateFormatter.dateFormat = "yyyy년 M월 d일"
+            dateFormatter.dateFormat = Strings.dateFormatWithYear
         }
                         
         return dateFormatter.string(from: self)
     }
     
 }
+

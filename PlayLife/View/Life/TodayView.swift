@@ -90,13 +90,13 @@ struct TodayView: View {
                 if selectedDate != nil {
                     Group {
                         if currentCalendar.isDateInToday(selectedDate!) {
-                            Text(SettingConstants.stringToday)
+                            Text(Strings.stringToday)
                         }
                         else if currentCalendar.isDateInYesterday(selectedDate!) {
-                            Text(SettingConstants.stringYesterday)
+                            Text(Strings.stringYesterday)
                         }
                         else if currentCalendar.isDateInTomorrow(selectedDate!) {
-                            Text(SettingConstants.stringTomorrow)
+                            Text(Strings.stringTomorrow)
                         }
                         else {
                             if currentCalendar.component(.year, from: selectedDate!) ==
@@ -199,7 +199,8 @@ struct TodayView: View {
                         NavigationLink(
                             destination: AddItemView(isActiveDetailView: .constant(false), isItemChanged: .constant(false))
                         ) {
-                            Text(SettingConstants.stringForEmptyDay)
+                            // Text("\(Image(systemName: "plus.circle")) \(Strings.stringForEmptyDay)")
+                            Text(Strings.stringForEmptyDay)
                                 .foregroundColor(Color.gray)
                                 .font(.system(size: SettingConstants.fontSize))
                         }
@@ -213,7 +214,7 @@ struct TodayView: View {
             
             
         } // end of VStack
-        .navigationTitle(SettingConstants.todayViewTitle)
+        .navigationTitle(Strings.todayViewTitle)
         .navigationBarHidden(true)
         .onAppear {
             currentDate = currentCalendar.startOfDay(for: Date())

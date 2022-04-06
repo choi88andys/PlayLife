@@ -23,7 +23,7 @@ struct PersonalityView: View {
         return VStack {
             Spacer()
             VStack {
-                Text(SettingConstants.introMessage)
+                Text(Strings.introMessage)
             }
             .font(.system(size: SettingConstants.fontSize*1.4))
             .multilineTextAlignment(.center)
@@ -35,13 +35,13 @@ struct PersonalityView: View {
                     Spacer()
                     VerticalStatusView(imageView: Image(systemName: "flame.circle"),
                                        color: Color.red,
-                                       value: SettingConstants.stringPassion,
+                                       value: Strings.stringPassion,
                                        isSelected: $isOnPassion,
                                        colorArray: $colorArray)
                     Spacer()
                     VerticalStatusView(imageView: Image(systemName: "figure.wave.circle"),
                                        color: Color.green,
-                                       value: SettingConstants.stringCourage,
+                                       value: Strings.stringCourage,
                                        isSelected: $isOnCourage,
                                        colorArray: $colorArray)
                     Spacer()
@@ -51,13 +51,13 @@ struct PersonalityView: View {
                     Spacer()
                     VerticalStatusView(imageView: Image(systemName: "hourglass.circle"),
                                        color: Color.blue,
-                                       value: SettingConstants.stringEndurance,
+                                       value: Strings.stringEndurance,
                                        isSelected: $isOnEndurance,
                                        colorArray: $colorArray)
                     Spacer()
                     VerticalStatusView(imageView: Image(systemName: "heart.circle"),
                                        color: Color.hotPink,
-                                       value: SettingConstants.stringKindness,
+                                       value: Strings.stringKindness,
                                        isSelected: $isOnKindness,
                                        colorArray: $colorArray)
                     Spacer()

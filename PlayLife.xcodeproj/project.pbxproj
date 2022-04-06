@@ -22,6 +22,9 @@
 		A1394FDE279BECCC0081E150 /* HorizontalCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1394FDD279BECCC0081E150 /* HorizontalCalendarView.swift */; };
 		A15D63FB279002B300CEC481 /* Date+Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D63FA279002B300CEC481 /* Date+Expression.swift */; };
 		A170E2CF27C5E88500FF2B8D /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A170E2CE27C5E88500FF2B8D /* CustomDivider.swift */; };
+		A18463B227FD607E00625DC9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A18463B427FD607E00625DC9 /* Localizable.strings */; };
+		A18463B727FD60FD00625DC9 /* String+localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18463B627FD60FD00625DC9 /* String+localize.swift */; };
+		A18463B927FD618100625DC9 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18463B827FD618100625DC9 /* Strings.swift */; };
 		A198704A277EDEBA002551D6 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1987049277EDEB9002551D6 /* PlayView.swift */; };
 		A198990227CF8DDC0001DDFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A198990127CF8DDC0001DDFD /* LaunchScreen.storyboard */; };
 		A1A12BA22797E9660001403B /* prev_kor.txt in Resources */ = {isa = PBXBuildFile; fileRef = A1A12BA12797E9660001403B /* prev_kor.txt */; };
@@ -69,6 +72,10 @@
 		A1394FDD279BECCC0081E150 /* HorizontalCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCalendarView.swift; sourceTree = "<group>"; };
 		A15D63FA279002B300CEC481 /* Date+Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Expression.swift"; sourceTree = "<group>"; };
 		A170E2CE27C5E88500FF2B8D /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
+		A18463B327FD607E00625DC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A18463B527FD608200625DC9 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A18463B627FD60FD00625DC9 /* String+localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localize.swift"; sourceTree = "<group>"; };
+		A18463B827FD618100625DC9 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		A1987049277EDEB9002551D6 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 		A198990127CF8DDC0001DDFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1A12BA12797E9660001403B /* prev_kor.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = prev_kor.txt; sourceTree = "<group>"; };
@@ -179,6 +186,7 @@
 				A1B0F58427743C5500B5866E /* Color+customColor.swift */,
 				A1EABA952787F02E00E55334 /* View+appearance.swift */,
 				A15D63FA279002B300CEC481 /* Date+Expression.swift */,
+				A18463B627FD60FD00625DC9 /* String+localize.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +223,8 @@
 				A1C5BE1A2789A2DB009D3A6A /* prev_eng.txt */,
 				A1C5BE1E2789A4B3009D3A6A /* noun_kor.txt */,
 				A1C5BE1627899B33009D3A6A /* noun_eng.txt */,
+				A18463B827FD618100625DC9 /* Strings.swift */,
+				A18463B427FD607E00625DC9 /* Localizable.strings */,
 				A126187C27C737F5003C42AB /* Fonts */,
 			);
 			path = ResourceFiles;
@@ -343,6 +353,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = A10C732127718C1B0055B5DF;
 			packageReferences = (
@@ -366,6 +377,7 @@
 				A126188727C75262003C42AB /* D2Coding-Ver1.3.2-20180524.ttf in Resources */,
 				A10C733527718C1D0055B5DF /* Preview Assets.xcassets in Resources */,
 				A1C5BE1727899B33009D3A6A /* noun_eng.txt in Resources */,
+				A18463B227FD607E00625DC9 /* Localizable.strings in Resources */,
 				A10C733227718C1D0055B5DF /* Assets.xcassets in Resources */,
 				A126188A27C7551E003C42AB /* neodgm_pro.ttf in Resources */,
 				A1C5BE1F2789A4B3009D3A6A /* noun_kor.txt in Resources */,
@@ -427,6 +439,7 @@
 				A1D13A89279FD93400311A7D /* Enemy+CoreDataProperties.swift in Sources */,
 				A1EABA962787F02E00E55334 /* View+appearance.swift in Sources */,
 				A1C5BE0927896737009D3A6A /* CalendarModuleView.swift in Sources */,
+				A18463B727FD60FD00625DC9 /* String+localize.swift in Sources */,
 				A1B8E2622772FDCD000118C4 /* StatusLabel.swift in Sources */,
 				A1DC39E8277C38340007536A /* SunAndMoonView.swift in Sources */,
 				A1E976FB278EA60C00D44E28 /* TypeSelectView.swift in Sources */,
@@ -452,11 +465,24 @@
 				A1DC39E6277C2F190007536A /* AddItemView.swift in Sources */,
 				A1E557DB27759E2E00D8567A /* Item+CoreDataProperties.swift in Sources */,
 				A1098F4427B60C1900FEB514 /* ItemDetailView.swift in Sources */,
+				A18463B927FD618100625DC9 /* Strings.swift in Sources */,
 				A10C732E27718C1B0055B5DF /* PlayLifeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A18463B427FD607E00625DC9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A18463B327FD607E00625DC9 /* en */,
+				A18463B527FD608200625DC9 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A10C733627718C1D0055B5DF /* Debug */ = {
@@ -582,7 +608,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0304.1;
 				DEVELOPMENT_ASSET_PATHS = "\"PlayLife/Preview Content\"";
 				DEVELOPMENT_TEAM = 7CF28467GM;
 				ENABLE_PREVIEWS = YES;
@@ -599,7 +625,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.choi.andys.PlayLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -615,7 +641,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0304.1;
 				DEVELOPMENT_ASSET_PATHS = "\"PlayLife/Preview Content\"";
 				DEVELOPMENT_TEAM = 7CF28467GM;
 				ENABLE_PREVIEWS = YES;
@@ -632,7 +658,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.choi.andys.PlayLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

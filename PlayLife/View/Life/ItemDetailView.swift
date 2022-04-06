@@ -15,7 +15,7 @@ struct ItemDetailView: View {
     
     let timer = Timer.publish(every: 0.012, on: .main, in: .common).autoconnect()
     @State var textWhen = ""
-    @State var progressLabelForOnce = SettingConstants.stringLabelUnfinished
+    @State var progressLabelForOnce = Strings.stringLabelUnfinished
     
     @State private var progressBarValueRecent: Double = 0
     @State private var progressBarValueTotal: Double = 0
@@ -94,11 +94,11 @@ struct ItemDetailView: View {
                 
                 VStack(spacing: SettingConstants.fontSize * 1.5) {
                     if anItem.typeSelection != ItemType.once {
-                        CustomProgressView(label: SettingConstants.stringRecent,
+                        CustomProgressView(label: Strings.stringRecent,
                                            progressValue: $progressBarValueRecent, isValid: $isValidRecent)
                         CustomDivider(percentage: 0.9)
                     }
-                    CustomProgressView(label: anItem.typeSelection==ItemType.once ? progressLabelForOnce : SettingConstants.stringTotal,
+                    CustomProgressView(label: anItem.typeSelection==ItemType.once ? progressLabelForOnce : Strings.stringTotal,
                                        progressValue: $progressBarValueTotal, isValid: $isValidTotal)
                 }
                 .customStyle()
@@ -113,7 +113,7 @@ struct ItemDetailView: View {
                 }
             }
         }
-        .navigationTitle(SettingConstants.itemDetailViewTitle)
+        .navigationTitle(Strings.itemDetailViewTitle)
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             let calendar = Calendar.current
@@ -132,10 +132,10 @@ struct ItemDetailView: View {
                     isValidTotal = true
                     if anItem.isDoneArray.contains(anItem.wrappedSelectedDate) {
                         achieveRateTotal = SettingConstants.progressMaxValue-1
-                        progressLabelForOnce = SettingConstants.stringLabelFinished
+                        progressLabelForOnce = Strings.stringLabelFinished
                     }
                     else {
-                        progressLabelForOnce = SettingConstants.stringLabelUnfinished
+                        progressLabelForOnce = Strings.stringLabelUnfinished
                     }
                 }
                 
@@ -152,7 +152,7 @@ struct ItemDetailView: View {
                         textWhen += anItem.wrappedSelectedDays[i].getWeekdayAsKorean(longText: isLongText)
                         
                         if i != count-1 {
-                            textWhen += SettingConstants.stringComma
+                            textWhen += Strings.stringComma
                         }
                     }
                     if !isLongText {
@@ -174,7 +174,7 @@ struct ItemDetailView: View {
                         textWhen += anItem.wrappedSelectedDays[i].getDayAsKorean()
                         
                         if i != count-1 {
-                            textWhen += SettingConstants.stringComma
+                            textWhen += Strings.stringComma
                         }
                     }
                     textWhen += SettingConstants.stringForWeekAndMonthEnding

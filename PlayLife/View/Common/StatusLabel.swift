@@ -134,6 +134,8 @@ struct StatusLabel: View {
 }
 
 
+
+#if DEBUG
 struct StatusLabel_Previews: PreviewProvider {
     @State static var isBlinkOn: Bool = true
         
@@ -184,4 +186,5 @@ struct StatusLabel_Previews: PreviewProvider {
         }
     }
 }
+#endif
  

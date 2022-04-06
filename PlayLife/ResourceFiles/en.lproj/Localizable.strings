@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  PlayLife
+
+  Created by MacAndys on 2022/04/06.
+  
+*/
+
+
+"introMessage" = "Please select all the words\nthat express you.";
+
+"stringPassion" = "Passion";
+"stringCourage" = "Courage";
+"stringEndurance" = "Endurance";
+"stringKindness" = "Kindness";
+
+
+
+// calendar
+"stringToday" = "Today";
+"stringTomorrow" = "Tomorrow";
+"stringYesterday" = "Yesterday";
+"dateFormatWithoutYear" = "MMM d";
+"dateFormatWithYear" = "MMM d, yyyy";
+"calendarLocaleIdentifier" = "en_US";
+"calendarHeaderDateFormat" = "YYYY   MMM";
+
+
+
+"previousStringForEmptyDay" = "Press the ";
+"afterStringForEmptyDay" = " button to add a schedule.";
+
+"stringForEmptyRegister" = "There is no registered schedule!";
+
+
+"todayViewTitle" = "Todo";
+"registeredItemViewTitle" = "Registered Items";
+"itemDetailViewTitle" = "Detail";
+"addItemViewTitleForAdd" = "Add";
+"addItemViewTitleForEdit" = "Edit";
+
+
+// add
+"placeholderString" = "Please enter the contents.";
+"stringDone" = "Done";
+"stringAlertForDelete" = "Do you really want to delete the schedule?";
+"stringDelete" = "Delete";
+"stringCancel" = "Cancel";
+"stringWhenTodo" = "When?";
+
+"stringWantedTimeOnce" = "I only need to do it once on the selected date.";
+"stringWantedTimeWeek" = "I will repeat every week on the selected date.";
+"stringWantedTimeMonth" = "I will repeat every month on the selected date.";
+"stringWantedTimeDaytime" = "I'd like to do it in the daytime.";
+"stringWantedTimeNighttime" = "I'd like to do it in the evening.";
+"stringWantedTimeAnytime" = "I don't mind doing it any time of the day.";
+
+
+// detail
+"stringRecent" = "Recent";
+"stringTotal" = "Total";
+
+"stringLabelFinished" = "Completed!";
+"stringLabelUnfinished" = "Uncompleted!";
+

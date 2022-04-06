@@ -34,13 +34,13 @@ struct AddItemView: View {
     
     
     @State var typeSelection: ItemType = .daysOfWeek
-    @State var content: String = SettingConstants.placeholderString
+    @State var content: String = Strings.placeholderString
     @State var isSun: Bool = true
     @State var isMoon: Bool = true
     @State var isExpanded: Bool = false
     var isValid: Bool {
         get {
-            if content==SettingConstants.placeholderString ||
+            if content==Strings.placeholderString ||
                 content.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ||
                 !isExpanded {
                 return false
@@ -64,14 +64,14 @@ struct AddItemView: View {
             VStack {
                 TextEditor(text: $content)
                     .disableAutocorrection(true)
-                    .foregroundColor(content==SettingConstants.placeholderString ? Color.gray : Color.primary)
+                    .foregroundColor(content==Strings.placeholderString ? Color.gray : Color.primary)
                     .font(.system(size: SettingConstants.fontSize*1))
                     .frame(height: SettingConstants.textEditorHeight)
                     .customStyle(innerPadding: SettingConstants.fontSize*0.4)
                     .focused($focusedField, equals: .field)
                     .onChange(of: focusedField) { newValue in
                         if newValue != nil &&
-                            content==SettingConstants.placeholderString {
+                            content==Strings.placeholderString {
                             content = ""
                         }
                     }
@@ -84,7 +84,7 @@ struct AddItemView: View {
                              */
                             HStack {
                                 Spacer()
-                                Text(SettingConstants.stringDone)
+                                Text(Strings.stringDone)
                                     .foregroundColor(Color.blue)
                                     .padding(.trailing, SettingConstants.edgePadding)
                                     .onTapGesture {
@@ -103,10 +103,10 @@ struct AddItemView: View {
                                             showingDeleteAlert = true
                                         }
                                         .alert(isPresented: $showingDeleteAlert) {
-                                            Alert(title: Text(SettingConstants.stringAlertForDelete),
+                                            Alert(title: Text(Strings.stringAlertForDelete),
                                                   message: nil,
                                                   primaryButton: .destructive(
-                                                    Text(SettingConstants.stringDelete),
+                                                    Text(Strings.stringDelete),
                                                     action: {
                                                         moc.delete(anItem!)
                                                         if moc.hasChanges {
@@ -117,7 +117,7 @@ struct AddItemView: View {
                                                         isActiveDetailView = false                                                        
                                                     }),
                                                   secondaryButton: .cancel(
-                                                    Text(SettingConstants.stringCancel)
+                                                    Text(Strings.stringCancel)
                                                   )
                                             )
                                         }
@@ -174,7 +174,7 @@ struct AddItemView: View {
                     if !isExpanded {
                         HStack {
                             Spacer()
-                            Text(SettingConstants.stringWhenTodo)
+                            Text(Strings.stringWhenTodo)
                             Spacer()
                             Image(systemName: "chevron.down")
                         }
@@ -226,7 +226,7 @@ struct AddItemView: View {
                 
             } // end of VStack
         } // end of ScrollView
-        .navigationTitle(isActiveDetailView ? SettingConstants.addItemViewTitleForRevise : SettingConstants.addItemViewTitleForAdd)
+        .navigationTitle(isActiveDetailView ? Strings.addItemViewTitleForEdit : Strings.addItemViewTitleForAdd)
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             if !isFinishedOnAppear {
@@ -412,22 +412,22 @@ struct AddItemView: View {
                 
                 switch typeSelection {
                 case .once:
-                    Text(SettingConstants.stringWantedTimeOnce)
+                    Text(Strings.stringWantedTimeOnce)
                 case .daysOfWeek:
-                    Text(SettingConstants.stringWantedTimeWeek)
+                    Text(Strings.stringWantedTimeWeek)
                 case .daysOfMonth:
-                    Text(SettingConstants.stringWantedTimeMonth)
+                    Text(Strings.stringWantedTimeMonth)
                 }
                 
                 
                 if isSun && !isMoon {
-                    Text(SettingConstants.stringWantedTimeDaytime)
+                    Text(Strings.stringWantedTimeDaytime)
                 }
                 else if !isSun && isMoon {
-                    Text(SettingConstants.stringWantedTimeNighttime)
+                    Text(Strings.stringWantedTimeNighttime)
                 }
                 else {
-                    Text(SettingConstants.stringWantedTimeAnytime)
+                    Text(Strings.stringWantedTimeAnytime)
                 }
             }
         }

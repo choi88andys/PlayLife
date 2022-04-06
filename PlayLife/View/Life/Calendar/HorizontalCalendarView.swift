@@ -87,7 +87,7 @@ struct HorizontalCalendarView: View {
             
         func getWeekday(date: Date) -> String {
             let dateFormatter = DateFormatter()
-            dateFormatter.locale = Locale(identifier: SettingConstants.calendarLocaleIdentifier)
+            dateFormatter.locale = Locale(identifier: Strings.calendarLocaleIdentifier)
             dateFormatter.dateFormat = "E"
             return dateFormatter.string(from: date)
         }

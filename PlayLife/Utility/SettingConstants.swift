@@ -18,7 +18,7 @@ struct SettingConstants {
     static let overlayTextSize: CGFloat = isPhone ? 40 : 60
     static let overlayLineWidth: CGFloat = isPhone ? 1.5 : 2.5
     static let appNameForPromotion: String = "Play Life"
-    static let introMessage: String = "당신을 표현하는 단어를\n모두 선택해 주세요."
+    
     
     static let stringKeyTalent = "talent"
     static let stringKeyPassion = "passion"
@@ -41,10 +41,7 @@ struct SettingConstants {
     static let minimumTalentPerWin: Int = 1
     
     
-    static let stringPassion = "열정"
-    static let stringCourage = "용기"
-    static let stringEndurance = "인내"
-    static let stringKindness = "친절"
+    
     
     
     
@@ -61,8 +58,7 @@ struct SettingConstants {
     static let shadowY: CGFloat = 2.8
     static let shadowRadius: CGFloat = 0
     
-    static let textEditorHeight: CGFloat = fontSize * 8
-    static let placeholderString: String = "내용을 입력해 주세요."
+    static let textEditorHeight: CGFloat = fontSize * 8    
     static let typeChangeDuration: Double = 0.25
     
     static let todayItemLineLimit: Int = 3
@@ -73,28 +69,15 @@ struct SettingConstants {
     static let recentDayLimit: Int = 30
     static let manyDaysInWeek: Int = 4
     
-    static let todayViewTitle = "리스트"
-    static let registeredItemViewTitle = "전체 일정"
-    static let itemDetailViewTitle = "자세히"
-    static let addItemViewTitleForAdd = "추가하기"
-    static let addItemViewTitleForRevise = "수정하기"
-    
-    static let stringDone = "완료"
-    static let stringAlertForDelete = "일정을 삭제할까요?"
-    static let stringDelete = "삭제"
-    static let stringCancel = "취소"
     
     
-    static let stringToday = "오늘"
-    static let stringTomorrow = "내일"
-    static let stringYesterday = "어제"
-    static let stringRecent = "최근"
-    static let stringTotal = "전체"
-    static let stringComma = ", "
+    
+    
+    
     static let stringEveryWeekStarting = "매주 "
     static let stringEveryMonthStarting = "매월 "
     
-    static let stringWhenTodo = "언제 할까요?"
+    
     
     static let stringForOnceEnding = "에 하면 돼요."
     static let stringForEveryday = "매일 반복해서 하고 있어요."
@@ -102,22 +85,15 @@ struct SettingConstants {
     static let stringWeekdayEnding = "요일"
         
     
-    static let stringLabelFinished = "완료했어요!"
-    static let stringLabelUnfinished = "아직 안 했어요!"
     
-    static let stringWantedTimeOnce = "선택한 날짜에 한 번만 하면 돼요."
-    static let stringWantedTimeWeek = "매주 선택한 요일에 반복해서 할 거예요."
-    static let stringWantedTimeMonth = "매월 선택한 날짜에 반복해서 할 거예요."
     
-    static let stringWantedTimeDaytime = "하루 중 낮 시간에 하고 싶어요."
-    static let stringWantedTimeNighttime = "하루 중 저녁 시간에 하고 싶어요."
-    static let stringWantedTimeAnytime = "하루 중 언제 해도 상관없어요."
+   
     
-    static let stringForEmptyDay: LocalizedStringKey = "\(Image(systemName: "plus.circle")) 버튼으로 새로운 일정을 추가할 수 있어요!"
-    static let stringForEmptyRegister = "등록된 일정이 없어요!"
     
-    static let calendarLocaleIdentifier: String = "ko_KR"
-    static let calendarHeaderDateFormat = "YYYY년   M월"
+    
+    
+    
+    
     
     
     

@@ -5,12 +5,8 @@
 //  Created by MacAndys on 2021/12/24.
 //
 
-
-
-
 import SwiftUI
 import CoreData
-
 
 class DataController: ObservableObject {
     let container = NSPersistentContainer(name: "PlayLife")
