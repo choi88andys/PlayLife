@@ -72,7 +72,7 @@ struct PersonalityView: View {
                       LinearGradient(colors: [.gray], startPoint: .top, endPoint: .bottom) :
                         LinearGradient(gradient: Gradient(colors: colorArray), startPoint: .topLeading, endPoint: .bottomTrailing)
                 )
-                .overlay(Text(SettingConstants.appNameForPromotion)
+                .overlay(Text(Strings.appNameForPromotion)
                             .font(.system(size: SettingConstants.fontSize*1.1, weight: Font.Weight.heavy, design: Font.Design.rounded))
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.center))

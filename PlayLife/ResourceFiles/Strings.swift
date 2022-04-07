@@ -9,6 +9,10 @@
 import SwiftUI
 
 struct Strings {
+    static let appNameForPromotion: String = "Play Life"
+    static let stringComma = ", "
+    static let isEnglish = "isEnglish".localized()
+    
         
     // porsonality
     static let introMessage = "introMessage".localized()
@@ -65,21 +69,51 @@ struct Strings {
     static let stringWantedTimeAnytime = "stringWantedTimeAnytime".localized()
     
     
+    static let stringForOnceStarting = "stringForOnceStarting".localized()
+    static let stringForOnceEnding = "stringForOnceEnding".localized()
+    
+    static let stringForEveryday = "stringForEveryday".localized()
+    static let stringForEveryWeekStarting = "stringForEveryWeekStarting".localized()
+    static let stringForEveryWeekEnding = "stringForEveryWeekEnding".localized()
+    
+    static let stringForEveryMonthStarting = "stringForEveryMonthStarting".localized()
+    static let stringForEveryMonthEnding = "stringForEveryMonthEnding".localized()
+    static let stringFirstDayOfMonth = "stringFirstDayOfMonth".localized()
+    static let stringSecondDayOfMonth = "stringSecondDayOfMonth".localized()
+    static let stringThirdDayOfMonth = "stringThirdDayOfMonth".localized()
+    static let stringFourthAndAfterDayOfMonth = "stringFourthAndAfterDayOfMonth".localized()
+    
     
     
     // detail
     static let stringRecent = "stringRecent".localized()
     static let stringTotal = "stringTotal".localized()
-    
     static let stringLabelFinished = "stringLabelFinished".localized()
     static let stringLabelUnfinished = "stringLabelUnfinished".localized()
  
+        
+    
+    // play
+    static let fileType = "txt"
+    static let separator = "\n"
+    static let loadFailed = "load failed"
+    static let notFounded = "not founded"
+    static let fileNamePrev = "fileNamePrev".localized()
+    static let fileNameNoun = "fileNameNoun".localized()
+    static let stringHintPassion = "stringHintPassion".localized()
+    static let stringHintCourage = "stringHintCourage".localized()
+    static let stringHintEndurance = "stringHintEndurance".localized()
+    static let stringHintKindness = "stringHintKindness".localized()
     
     
+    static let stringTopForWin = "stringTopForWin".localized()
+    static let stringMiddle = "stringMiddle".localized()
+    static let stringBottomForWin = "stringBottomForWin".localized()
+    
+    static let stringTopForLose = "stringTopForLose".localized()
+    static let stringBottomForLose = "stringBottomForLose".localized()
+    static let stringBottom2 = "people."
     
     
-    
-    // 
-    static let stringComma = ", "
     
 }

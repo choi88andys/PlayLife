@@ -35,13 +35,13 @@ struct PlayView: View {
         
         switch enemy[0].weakPoint {
         case .passion:
-            hint = SettingConstants.stringHintPassion
+            hint = Strings.stringHintPassion
         case .courage:
-            hint = SettingConstants.stringHintCourage
+            hint = Strings.stringHintCourage
         case .endurance:
-            hint = SettingConstants.stringHintEndurance
+            hint = Strings.stringHintEndurance
         case .kindness:
-            hint = SettingConstants.stringHintKindness
+            hint = Strings.stringHintKindness
         }
         return hint
     }
@@ -265,22 +265,34 @@ struct PlayView: View {
                                 VStack(spacing: SettingConstants.fontSize * 0.5) {
                                     Spacer()
                                     if !isWin {
-                                        Text("\(String(enemyLevel) + SettingConstants.stringHowMany)")
-                                            .opacity(opacityResultLevel)
+                                        if SettingConstants.isEnglish {
+                                            Text(Strings.stringTopForLose)
+                                                .opacity(opacityResultLevel)
+                                        } else {
+                                            Text("\(String(enemyLevel) + Strings.stringTopForLose)")
+                                                .opacity(opacityResultLevel)
+                                        }
                                     }
                                     else {
-                                        Text("\(String(enemyLevel) + SettingConstants.stringHowMany)")
-                                            .hidden()
+                                        if SettingConstants.isEnglish {
+                                            Text(Strings.stringTopForLose)
+                                                .hidden()
+                                        } else {
+                                            Text("\(String(enemyLevel) + Strings.stringTopForLose)")
+                                                .hidden()
+                                        }
                                     }
                                     Text(enemyName)
                                         .font(.custom(SettingConstants.fontNamePlay, size: SettingConstants.fontSize * 2))
+                                        // .font(.custom(SettingConstants.fontNamePlay, size: SettingConstants.fontSize * 1.7))
+                                        // .font(.custom(SettingConstants.fontNamePlay, size: SettingConstants.fontSize * 2)) // kor
                                         .overlay(Color.clear.modifier(GeometryGetterMod(rect: $rect1)))
                                 }
                                 
                                 VStack {
                                     Spacer()
                                     VStack {
-                                        Text(SettingConstants.stringForWho)
+                                        Text(Strings.stringMiddle)
                                             .opacity(opacityResultName)
                                     }
                                     .frame(height: rect1.height)
@@ -298,26 +310,50 @@ struct PlayView: View {
                     
                     VStack(spacing: SettingConstants.fontSize * 0.5) {
                         if isWin {
-                            Text("\(String(enemyLevel) + SettingConstants.stringHowMany)")
-                                .opacity(opacityResultLevel)
+                            if SettingConstants.isEnglish {
+                                Text(Strings.stringTopForWin)
+                                    .opacity(opacityResultLevel)
+                            } else {
+                                Text("\(String(enemyLevel) + Strings.stringTopForWin)")
+                                    .opacity(opacityResultLevel)
+                            }
                             
-                            HStack(spacing: SettingConstants.fontSize * 0.2) {
+                            
+                            HStack(spacing: SettingConstants.isEnglish ? SettingConstants.fontSize*0.4 : SettingConstants.fontSize*0.2) {
                                 Text(enemyName)
-                                    .font(.custom(SettingConstants.fontNamePlay, size: SettingConstants.fontSize * 1.3))
-                                Text(SettingConstants.stringForWho)
+                                    .font(.custom(SettingConstants.fontNamePlay, size: SettingConstants.fontSize * 1.7))
+                                if !SettingConstants.isEnglish {
+                                    Text(Strings.stringMiddle)
+                                }                                
                             }
                             .opacity(opacityResultName)
                             
-                            Text(SettingConstants.stringWin)
-                                .opacity(opacityResultVictory)
+                            
+                            if SettingConstants.isEnglish {
+                                Text("\(Strings.stringBottomForWin) \(enemyLevel) \(Strings.stringBottom2)")
+                                    .opacity(opacityResultVictory)
+                            } else {
+                                Text(Strings.stringBottomForWin)
+                                    .opacity(opacityResultVictory)
+                            }                            
                         }
                         else {
-                            Text(SettingConstants.stringLose)
-                                .opacity(opacityResultVictory)
+                            if SettingConstants.isEnglish {
+                                Text("\(Strings.stringBottomForLose) \(enemyLevel) \(Strings.stringBottom2)")
+                                    .opacity(opacityResultVictory)
+                            } else {
+                                Text(Strings.stringBottomForLose)
+                                    .opacity(opacityResultVictory)
+                            }
+                            
                             
                             if enemy[0].defeatCount >= SettingConstants.tryCountForHint {
-                                Text(getHint())
-                                    .opacity(opacityResultHint)
+                                VStack(alignment: .center) {
+                                    Text(getHint())
+                                        .opacity(opacityResultHint)
+                                }
+                                
+                                
                             }
                         }
                         
@@ -391,35 +427,35 @@ struct PlayView: View {
         } // end of top view
         .onAppear {
             if prevArray.isEmpty {
-                if let filepath = Bundle.main.path(forResource: SettingConstants.fileNamePrev, ofType: SettingConstants.fileType) {
+                if let filepath = Bundle.main.path(forResource: Strings.fileNamePrev, ofType: Strings.fileType) {
                     do {
                         let data = try String(contentsOfFile: filepath)
                         let lines = data.split(whereSeparator: \.isNewline)
-                        let result = lines.joined(separator: SettingConstants.separator)
-                        prevArray = result.components(separatedBy: SettingConstants.separator)
+                        let result = lines.joined(separator: Strings.separator)
+                        prevArray = result.components(separatedBy: Strings.separator)
                     } catch {
-                        print(SettingConstants.fileNamePrev)
-                        print(SettingConstants.loadFailed)
+                        print(Strings.fileNamePrev)
+                        print(Strings.loadFailed)
                     }
                 } else {
-                    print(SettingConstants.fileNamePrev)
-                    print(SettingConstants.notFounded)
+                    print(Strings.fileNamePrev)
+                    print(Strings.notFounded)
                 }
             }
             if nounArray.isEmpty {
-                if let filepath = Bundle.main.path(forResource: SettingConstants.fileNameNoun, ofType: SettingConstants.fileType) {
+                if let filepath = Bundle.main.path(forResource: Strings.fileNameNoun, ofType: Strings.fileType) {
                     do {
                         let data = try String(contentsOfFile: filepath)
                         let lines = data.split(whereSeparator: \.isNewline)
-                        let result = lines.joined(separator: SettingConstants.separator)
-                        nounArray = result.components(separatedBy: SettingConstants.separator)
+                        let result = lines.joined(separator: Strings.separator)
+                        nounArray = result.components(separatedBy: Strings.separator)
                     } catch {
-                        print(SettingConstants.fileNameNoun)
-                        print(SettingConstants.loadFailed)
+                        print(Strings.fileNameNoun)
+                        print(Strings.loadFailed)
                     }
                 } else {
-                    print(SettingConstants.fileNameNoun)
-                    print(SettingConstants.notFounded)
+                    print(Strings.fileNameNoun)
+                    print(Strings.notFounded)
                 }
             }
             // Runs when it first time.

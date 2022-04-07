@@ -314,7 +314,8 @@ struct AddItemView: View {
             @Binding var isSelected: Bool
             
             var body: some View {
-                let text = (num+1).getWeekdayAsKorean(longText: false)
+                // let text = (num+1).getWeekdayAsKorean(longText: false)
+                let text = (num+1).getWeekday(isLongText: false)
                 
                 return Circle()
                     .customCircle(text: text, color: Color.skyBlue, isSelected: isSelected)

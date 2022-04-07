@@ -37,41 +37,30 @@ extension Int {
 
 
 extension Int {
-    func getWeekdayAsKorean(longText: Bool = true) -> String {
+    func getWeekday(isLongText: Bool = true) -> String {
         let value = self
-        var weekday: String = ""
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: Strings.calendarLocaleIdentifier)
+        
+        return isLongText ? dateFormatter.weekdaySymbols[value-1] : dateFormatter.veryShortWeekdaySymbols[value-1]
+    }
+        
+    
+    func getDay() -> String {
+        let value = self
+        var day = ""
+        day = String(value)
         
         switch value {
         case 1:
-            weekday = "일"
+            day += Strings.stringFirstDayOfMonth
         case 2:
-            weekday = "월"
+            day += Strings.stringSecondDayOfMonth
         case 3:
-            weekday = "화"
-        case 4:
-            weekday = "수"
-        case 5:
-            weekday = "목"
-        case 6:
-            weekday = "금"
-        case 7:
-            weekday = "토"
+            day += Strings.stringThirdDayOfMonth
         default:
-            weekday = "일"
+            day += Strings.stringFourthAndAfterDayOfMonth
         }
-        
-        if longText {
-            weekday += "요일"
-        }
-        return weekday
-    }
-    
-    func getDayAsKorean() -> String {
-        let value = self
-        var day: String = ""
-        
-        day = String(value)
-        day += "일"
         
         return day
     }

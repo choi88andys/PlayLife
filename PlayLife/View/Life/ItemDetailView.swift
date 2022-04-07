@@ -122,8 +122,10 @@ struct ItemDetailView: View {
             
             switch anItem.typeSelection {
             case ItemType.once:
-                textWhen = anItem.wrappedSelectedDate.getString(withoutYear: false)
-                textWhen += SettingConstants.stringForOnceEnding
+                textWhen = Strings.stringForOnceStarting
+                textWhen += anItem.wrappedSelectedDate.getString(withoutYear: false)
+                textWhen += Strings.stringForOnceEnding
+                
                 
                 if anItem.wrappedSelectedDate > today {
                     isValidTotal = false
@@ -142,42 +144,40 @@ struct ItemDetailView: View {
                 
             case ItemType.daysOfWeek:
                 if count == ItemType.daysOfWeek.rawValue {
-                    textWhen = SettingConstants.stringForEveryday
+                    textWhen = Strings.stringForEveryday
                 }
                 else {
-                    textWhen = SettingConstants.stringEveryWeekStarting
+                    textWhen = Strings.stringForEveryWeekStarting
                     
-                    let isLongText = count>SettingConstants.manyDaysInWeek ? false : true
                     for i in 0..<count {
-                        textWhen += anItem.wrappedSelectedDays[i].getWeekdayAsKorean(longText: isLongText)
+                        textWhen += anItem.wrappedSelectedDays[i].getWeekday(isLongText: true)
                         
                         if i != count-1 {
                             textWhen += Strings.stringComma
                         }
                     }
-                    if !isLongText {
-                        textWhen += SettingConstants.stringWeekdayEnding
-                    }
-                    textWhen += SettingConstants.stringForWeekAndMonthEnding
+                    
+                    textWhen += Strings.stringForEveryWeekEnding
                 }
                 calcAchieveRate(calendar: calendar, today: today, itemType: .daysOfWeek)
                 
                 
             case ItemType.daysOfMonth:
                 if count == ItemType.daysOfMonth.rawValue {
-                    textWhen = SettingConstants.stringForEveryday
+                    textWhen = Strings.stringForEveryday
                 }
                 else {
-                    textWhen = SettingConstants.stringEveryMonthStarting
+                    textWhen = Strings.stringForEveryMonthStarting
                     
                     for i in 0..<count {
-                        textWhen += anItem.wrappedSelectedDays[i].getDayAsKorean()
+                        textWhen += anItem.wrappedSelectedDays[i].getDay()
                         
                         if i != count-1 {
                             textWhen += Strings.stringComma
                         }
                     }
-                    textWhen += SettingConstants.stringForWeekAndMonthEnding
+                    
+                    textWhen += Strings.stringForEveryMonthEnding
                 }
                 calcAchieveRate(calendar: calendar, today: today, itemType: .daysOfMonth)
             } // end of switch

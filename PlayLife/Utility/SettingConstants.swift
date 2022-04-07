@@ -17,9 +17,7 @@ struct SettingConstants {
     static let edgePadding: CGFloat = isPhone ? 8 : 16
     static let overlayTextSize: CGFloat = isPhone ? 40 : 60
     static let overlayLineWidth: CGFloat = isPhone ? 1.5 : 2.5
-    static let appNameForPromotion: String = "Play Life"
-    
-    
+        
     static let stringKeyTalent = "talent"
     static let stringKeyPassion = "passion"
     static let stringKeyCourage = "courage"
@@ -28,8 +26,8 @@ struct SettingConstants {
     static let stringKeyIsFirstLaunched = "isFirstLaunched"
     static let stringKeyTomorrow = "tomorrow"
     
-    
-            
+    static let isEnglish: Bool = Strings.isEnglish=="true"
+                
     
     // Status
     static let statusViewProportion: Double = 0.19
@@ -39,9 +37,6 @@ struct SettingConstants {
     static let talentPerPastItem: Int = 1
     static let maximumTalentPerWin: Int = 4
     static let minimumTalentPerWin: Int = 1
-    
-    
-    
     
     
     
@@ -72,31 +67,6 @@ struct SettingConstants {
     
     
     
-    
-    
-    static let stringEveryWeekStarting = "매주 "
-    static let stringEveryMonthStarting = "매월 "
-    
-    
-    
-    static let stringForOnceEnding = "에 하면 돼요."
-    static let stringForEveryday = "매일 반복해서 하고 있어요."
-    static let stringForWeekAndMonthEnding = "마다 반복해서 하고 있어요."
-    static let stringWeekdayEnding = "요일"
-        
-    
-    
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
     // Play
     static let fontNamePlay = "NeoDunggeunmoPro-Regular"
     
@@ -109,28 +79,6 @@ struct SettingConstants {
     
     static let timerInterval: Double = 0.1
     static let tryCountForHint: Int32 = 5
-    
-    
-    static let fileNamePrev = "prev_kor"
-    static let fileNameNoun = "noun_kor"
-    static let fileType = "txt"
-    static let separator = "\n"
-    
-    static let loadFailed = "load failed"
-    static let notFounded = "not founded"
-    
-    static let stringWin = "승리했습니다!"
-    static let stringLose = "패배했습니다!"
-    static let stringForWho = "에게"
-    static let stringHowMany = "명을 괴롭힌"
-    
-    
-    static let stringHintPassion = "열정적으로 도전하면 해낼 수 있을 거예요."
-    static let stringHintCourage = "용기를 내서 직면하면 길이 보일지도 몰라요."
-    static let stringHintEndurance = "때로는 인내하며 버티는 것이 정답일 수도 있어요."
-    static let stringHintKindness = "따뜻하게 친절을 베풀면 도움이 될지도 몰라요."
-    
-    
     
     
 }

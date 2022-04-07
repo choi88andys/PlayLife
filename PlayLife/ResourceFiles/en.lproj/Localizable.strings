@@ -6,6 +6,8 @@
   
 */
 
+"isEnglish" = "true";
+
 
 "introMessage" = "Please select all the words\nthat express you.";
 
@@ -34,7 +36,7 @@
 
 
 "todayViewTitle" = "Todo";
-"registeredItemViewTitle" = "Registered Items";
+"registeredItemViewTitle" = "Registered";
 "itemDetailViewTitle" = "Detail";
 "addItemViewTitleForAdd" = "Add";
 "addItemViewTitleForEdit" = "Edit";
@@ -55,6 +57,20 @@
 "stringWantedTimeNighttime" = "I'd like to do it in the evening.";
 "stringWantedTimeAnytime" = "I don't mind doing it any time of the day.";
 
+"stringForOnceStarting" = "It should be done on ";
+"stringForOnceEnding" = "";
+
+"stringForEveryday" = "I do it every day.";
+"stringForEveryWeekStarting" = "I do it every ";
+"stringForEveryWeekEnding" = ".";
+
+"stringForEveryMonthStarting" = "I do it on the ";
+"stringForEveryMonthEnding" = " of every month.";
+"stringFirstDayOfMonth" = "st";
+"stringSecondDayOfMonth" = "nd";
+"stringThirdDayOfMonth" = "rd";
+"stringFourthAndAfterDayOfMonth" = "th";
+
 
 // detail
 "stringRecent" = "Recent";
@@ -62,4 +78,22 @@
 
 "stringLabelFinished" = "Completed!";
 "stringLabelUnfinished" = "Uncompleted!";
+
+
+
+// play
+"fileNamePrev" = "prev_eng";
+"fileNameNoun" = "noun_eng";
+"stringHintPassion" = "If you try passionately,\nyou will be able to do it.";
+"stringHintCourage" = "If you take courage and face it,\nyou may see the way.";
+"stringHintEndurance" = "Sometimes the answer may be to persevere\nand hang in there.";
+"stringHintKindness" = "It may be helpful to be kind to others.";
+
+
+"stringTopForWin" = "You won against";
+"stringMiddle" = "";
+"stringBottomForWin" = "that afflicted";
+
+"stringTopForLose" = "You lost against";
+"stringBottomForLose" = "that afflicted";
 

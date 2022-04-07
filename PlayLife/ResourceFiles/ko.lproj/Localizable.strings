@@ -6,6 +6,7 @@
   
 */
 
+"isEnglish" = "false";
 
 "introMessage" = "당신을 표현하는 단어를\n모두 선택해 주세요.";
 "stringPassion" = "열정";
@@ -56,6 +57,21 @@
 "stringWantedTimeNighttime" = "하루 중 저녁 시간에 하고 싶어요.";
 "stringWantedTimeAnytime" = "하루 중 언제 해도 상관없어요.";
 
+"stringForOnceStarting" = "";
+"stringForOnceEnding" = "에 하면 돼요.";
+
+"stringForEveryday" = "매일 반복해서 하고 있어요.";
+"stringForEveryWeekStarting" = "매주 ";
+"stringForEveryWeekEnding" = "마다 반복해서 하고 있어요.";
+
+"stringForEveryMonthStarting" = "매월 ";
+"stringForEveryMonthEnding" = "마다 반복해서 하고 있어요.";
+"stringFirstDayOfMonth" = "일";
+"stringSecondDayOfMonth" = "일";
+"stringThirdDayOfMonth" = "일";
+"stringFourthAndAfterDayOfMonth" = "일";
+
+
 
 
 // detail
@@ -64,3 +80,28 @@
 
 "stringLabelFinished" = "완료했어요!";
 "stringLabelUnfinished" = "아직 안 했어요!";
+
+
+
+// play
+"fileNamePrev" = "prev_kor";
+"fileNameNoun" = "noun_kor";
+"stringHintPassion" = "열정적으로 도전하면 해낼 수 있을 거예요.";
+"stringHintCourage" = "용기를 내서 직면하면 길이 보일지도 몰라요.";
+"stringHintEndurance" = "때로는 인내하며 버티는 것이 정답일 수도 있어요.";
+"stringHintKindness" = "따뜻하게 친절을 베풀면 도움이 될지도 몰라요.";
+
+
+"stringTopForWin" = "명을 괴롭힌";
+"stringMiddle" = "에게";
+"stringBottomForWin" = "승리했습니다!";
+
+"stringTopForLose" = "명을 괴롭힌";
+"stringBottomForLose" = "패배했습니다!";
+
+
+
+
+
+
+
